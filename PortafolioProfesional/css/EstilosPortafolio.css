@@ -1,0 +1,122 @@
+/* Estilo base */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+header {
+    text-align: center;
+    background-color: #007acc;
+    color: white;
+    padding: 50px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.navbar {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    background-color: #007acc;
+    border-radius: 5px;
+}
+
+/* Ajuste para evitar la superposición */
+main {
+    padding: 100px 20px 20px;
+    /* Se incrementa el padding superior */
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section img {
+    width: 300px;
+    /* Establecemos el mismo ancho para todas las imágenes */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    /* Centra la imagen */
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    .navbar ul li a {
+        padding: 10px;
+    }
+}
